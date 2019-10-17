@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// Variables
+$dark: #201a1e;
+$primary: #bb1e7d;
+
+// card variables
+$card-content-padding: 0.5rem;
+
+body, html
+{
+    height: 100%;
+}
+.wrapper
+{
+    height: auto;
+    min-height: 100%;
+}
+.level
+{
+    padding: 0.5rem;
+}
+.card-content
+{
+    text-align: center;
+}
+
+.section__main
+{
+
+}
+
+@import "../node_modules/bulma/bulma.sass";

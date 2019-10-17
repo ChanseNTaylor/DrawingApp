@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  header
+    nav.level.has-background-primary
+      .level-left
+        a.has-text-light.has-text-weight-bold(href="/") Untitled Drawing App
+      .level-right
+        a.level-item.has-text-light(href="/draw") DRAW
+        a.level-item.has-text-light(href="/explore") EXPLORE
+        button.button.level-item.is-outlined.is-inverted.is-primary LOGIN
+  main.section
+    .columns
+      .container.column
+        h1.title.has-text-primary.is-2.is-spaced Explore, create, share, and enjoy.
+        h3.subtitle.has-text-light.is-4 Create an account today to create, view, and share creative works right now using only the web browser of your choice.
+        .container.section__main
+          h2.title.has-text-primary About
+          hr
+          p.has-text-light This is a website where you can draw things and share your creations with other users!  The website records your drawing for playback at a later date!  Users can also download images and video recordings.
+      .container.column
+        figure.card
+          a(href="/")
+            img.card-image(src="https://via.placeholder.com/600" alt="Random image.")/
+          figcaption.card-content This is an example image by an unknown artist.  Click the image above to be taken to a different page where you can view the fullsize image, watch the drawing process from start to finish, or download the image it's video recording.

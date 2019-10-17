@@ -1,0 +1,21 @@
+{
+  "name": "drawingapp",
+  "version": "0.0.0",
+  "private": true,
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss public/stylesheets/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-build && node ./bin/www"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4"
+  }
+}
