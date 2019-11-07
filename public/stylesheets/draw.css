@@ -1,3 +1,6 @@
+.wrapper {
+  height: 100vh; }
+
 .level {
   padding: 0.75rem; }
 
@@ -3686,7 +3689,7 @@ a.tag:hover {
 
 .card-content {
   background-color: transparent;
-  padding: 0.75rem; }
+  padding: 1.5rem; }
 
 .card-footer {
   background-color: transparent;

@@ -2,8 +2,16 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')/
+    title Untitled Drawing App
+    block scripts
   body
     .wrapper.has-background-dark
+      header
+        nav.level.has-background-primary
+          .level-left
+            a.has-text-light.has-text-weight-bold(href="/") Untitled Drawing App
+          .level-right
+            a.level-item.has-text-light(href="/draw") DRAW
+            a.level-item.has-text-light(href="/explore") EXPLORE
+            a.button.level-item.is-outlined.is-inverted.is-primary LOGIN/SIGN UP
       block content
