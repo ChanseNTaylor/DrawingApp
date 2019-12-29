@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// generic variables
+$dark: #2d252a;
+$primary: #bb1e7d;
+
+// level variables
+$level-item-spacing: 1.25rem !default;
+
+// footer variables
+$footer-background-color: #221a1e;
+
+.level
+{
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+@import "../node_modules/bulma/bulma.sass";

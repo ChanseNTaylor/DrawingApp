@@ -1,17 +1,42 @@
+- const title = "Untitled Drawing App";
+
 // Thank you for visiting my website!
 doctype html
 html
   head
-    title Untitled Drawing App
+    title #{title}
     block scripts
   body
     .wrapper.has-background-dark
+      .modal.is-clipped
+        .modal-background
+        .modal-content
+          .box
+            .field
+              label.label Username
+              .control
+                input.input
+            .field
+              label.label Password
+              .control
+                input.input
+            .field
+              .columns.is-marginless
+                .column.is-full.button.is-primary Log in
+            .field
+              .columns.is-marginless
+                .column.button.is-full.is-outlined.is-primary Sign Up
       header
         nav.level.has-background-primary
           .level-left
-            a.has-text-light.has-text-weight-bold(href="/") Untitled Drawing App
+            a.level-item.has-text-light.has-text-weight-bold(href="/") #{title}
           .level-right
             a.level-item.has-text-light(href="/draw") DRAW
             a.level-item.has-text-light(href="/explore") EXPLORE
-            a.button.level-item.is-outlined.is-inverted.is-primary LOGIN/SIGN UP
+            .button.level-item.is-outlined.is-inverted.is-primary LOGIN/SIGN UP
       block content
+      block footer
+      .footer
+        .container.has-text-centered
+          p Copyright &COPY 2019, Chanse Taylor
+      script(src="/javascripts/modal.js")

@@ -1,29 +1,9 @@
-@charset "utf-8";
-
-// generic variables
-$dark: #2d252a;
-$primary: #bb1e7d;
-
 // card variables
 $card-content-padding: 0.75rem;
 
-// level variables
-$level-item-spacing: 1rem !default;
-
-// footer variables
-$footer-background-color: #221a1e;
-
-.level
-{
-    padding: 0.75rem;
-}
 .card-content
 {
     text-align: center;
 }
-a.level-item
-{
-    padding: 0.5rem;
-}
 
-@import "../node_modules/bulma/bulma.sass";
+@import "_generic.scss";

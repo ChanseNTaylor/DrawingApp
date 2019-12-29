@@ -1,14 +1,6 @@
-.wrapper {
-  height: 100vh; }
-
 .level {
-  padding: 0.75rem; }
-
-.card-content {
-  text-align: center; }
-
-a.level-item {
-  padding: 0.5rem; }
+  padding: 0.75rem;
+  font-weight: 600; }
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -3789,7 +3781,7 @@ button.dropdown-item {
       margin-top: 0; }
     .level.is-mobile .level-item:not(:last-child) {
       margin-bottom: 0;
-      margin-right: 1rem; }
+      margin-right: 1.25rem; }
     .level.is-mobile .level-item:not(.is-narrow) {
       flex-grow: 1; }
   @media screen and (min-width: 769px), print {
@@ -3810,7 +3802,7 @@ button.dropdown-item {
     margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     .level-item:not(:last-child) {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1.25rem; } }
 
 .level-left,
 .level-right {
@@ -3823,7 +3815,7 @@ button.dropdown-item {
   @media screen and (min-width: 769px), print {
     .level-left .level-item:not(:last-child),
     .level-right .level-item:not(:last-child) {
-      margin-right: 1rem; } }
+      margin-right: 1.25rem; } }
 
 .level-left {
   align-items: center;
@@ -6967,3 +6959,8 @@ label.panel-block {
 .footer {
   background-color: #221a1e;
   padding: 3rem 1.5rem 6rem; }
+
+.canvas {
+  width: 50rem;
+  height: 35rem;
+  margin: 0 auto; }
