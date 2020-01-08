@@ -1,9 +1,8 @@
 extends layout
 
 block scripts
-  link(rel='stylesheet', href='/stylesheets/draw.css')
+  link(rel='stylesheet' href='/stylesheets/draw.css')
 block content
-  .section
-    .container
-      canvas.canvas.is-flex
+  main.section
+    canvas.canvas.is-flex
   script(src="/javascripts/draw.js")

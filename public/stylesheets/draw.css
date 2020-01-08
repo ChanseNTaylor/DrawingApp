@@ -1,6 +1,20 @@
+html, body {
+  height: 100%; }
+
+body {
+  flex-direction: column; }
+
+.wrapper {
+  flex: 1 0 auto;
+  flex-direction: column; }
+
 .level {
   padding: 0.75rem;
   font-weight: 600; }
+
+.footer {
+  flex-shrink: 0;
+  margin-top: auto; }
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

@@ -6,26 +6,27 @@ html
   head
     title #{title}
     block scripts
-  body
-    .wrapper.has-background-dark
-      .modal.is-clipped
+  body.is-flex
+    .wrapper.has-background-dark.is-flex
+      .modal
         .modal-background
         .modal-content
           .box
-            .field
-              label.label Username
-              .control
-                input.input
-            .field
-              label.label Password
-              .control
-                input.input
-            .field
-              .columns.is-marginless
-                .column.is-full.button.is-primary Log in
-            .field
-              .columns.is-marginless
-                .column.button.is-full.is-outlined.is-primary Sign Up
+            .container
+              .field
+                label.label Username
+                .control
+                  input.input
+              .field
+                label.label Password
+                .control
+                  input.input
+              .field
+                .columns.is-marginless
+                  .column.button.is-primary.is-paddingless Log in
+              .field
+                .columns.is-marginless
+                  .column.button.is-outlined.is-primary.is-paddingless Sign Up
       header
         nav.level.has-background-primary
           .level-left
