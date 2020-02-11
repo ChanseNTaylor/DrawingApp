@@ -1,3 +1,6 @@
+.canvas {
+  margin: 0 auto; }
+
 html, body {
   height: 100%; }
 
@@ -6973,8 +6976,3 @@ label.panel-block {
 .footer {
   background-color: #221a1e;
   padding: 3rem 1.5rem 6rem; }
-
-.canvas {
-  width: 50rem;
-  height: 35rem;
-  margin: 0 auto; }
