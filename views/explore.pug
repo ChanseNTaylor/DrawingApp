@@ -5,4 +5,19 @@ block scripts
 block content
   main.section
     .container
-      h1.title Featured
+      h1.title.has-text-primary Featured
+      .section.is-flex.thumbnailSection
+        +featuredImageThumbnail("/", "https://via.placeholder.com/200", "Yo!")
+        +featuredImageThumbnail("/", "https://via.placeholder.com/200", "Yo!")
+        +featuredImageThumbnail("/", "https://via.placeholder.com/200", "Yo!")
+    .container
+      h1.title.has-text-primary Recent
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")
+      img(src="https://via.placeholder.com/150" alt="Featured Image")

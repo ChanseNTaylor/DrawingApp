@@ -1,13 +1,17 @@
 - const title = "5DRAW";
 
+mixin featuredImageThumbnail(fullURL, imgSrc, text)
+  a(href=fullURL)
+    img(src=imgSrc alt=text)
+
 // Thank you for visiting my website!
 doctype html
 html
   head
     title #{title}
     block scripts
-  body.is-flex
-    .wrapper.has-background-dark
+  body
+    .wrapper.has-background-dark.is-relative
       .modal
         .modal-background
         .modal-content

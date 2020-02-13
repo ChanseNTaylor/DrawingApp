@@ -9,6 +9,11 @@ html, body
 {
     height: 100%;
 }
+.wrapper
+{
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
 .level
 {
     padding: 0.75rem;
@@ -16,7 +21,9 @@ html, body
 }
 .footer
 {
-    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 @import "../node_modules/bulma/sass/utilities/all";

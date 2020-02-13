@@ -1,12 +1,18 @@
 html, body {
   height: 100%; }
 
+.wrapper {
+  min-height: 100vh;
+  padding-bottom: 10rem; }
+
 .level {
   padding: 0.75rem;
   font-weight: 600; }
 
 .footer {
-  margin-top: auto; }
+  bottom: 0;
+  position: absolute;
+  width: 100%; }
 
 @keyframes spinAround {
   from {
@@ -3649,11 +3655,6 @@ a.box:active {
     font-size: 1.25rem; }
   .control.is-loading.is-large:after {
     font-size: 1.5rem; }
-
-.wrapper {
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column; }
 
 .canvas {
   margin: 0 auto; }
