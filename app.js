@@ -1,12 +1,11 @@
+"use strict";
 const path = require('path');
 const logger = require('morgan');
 const express = require('express');
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 
-const drawRouter = require("./routes/draw");
 const indexRouter = require('./routes/index');
-const exploreRouter = require("./routes/explore");
 
 const app = express();
 
@@ -20,9 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use("/draw", drawRouter);
-app.use("/explore", exploreRouter);
+app.use(indexRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => { next(createError(404)); });
